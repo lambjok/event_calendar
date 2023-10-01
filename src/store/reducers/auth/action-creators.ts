@@ -9,7 +9,7 @@ import UserService from "../../../api/UserService";
 export const AuthActionCreators = {
   setUser: (user: IUser): SetUserAction => ({ type: AuthActionsEnum.SET_USER, payload: user }),
   setIsAuth: (auth: boolean): SetAuthAction => ({ type: AuthActionsEnum.SET_AUTH, payload: auth }),
-  setIsLoading: (payload: boolean) => ({ type: AuthActionsEnum.SET_IS_LOADING, payload}),
+  setIsLoading: (payload: boolean) => ({ type: AuthActionsEnum.SET_IS_LOADING, payload }),
   setError: (payload: string) => ({ type: AuthActionsEnum.SET_ERROR, payload }),
   login: (username: string, password: string) => async (dispatch: AppDispatch) => {
     try {
